@@ -1,16 +1,24 @@
+// Работа кнопки бургер-меню
+document.addEventListener("DOMContentLoaded", function () {
+   const header = document.querySelector(".header");
+   const burger = document.getElementById("burger");
 
+   burger.addEventListener("click", function () {
+       if (header.classList.contains("open")) {
+           header.classList.remove("open");
+           header.classList.add("close");
+       } else {
+           header.classList.remove("close");
+           header.classList.add("open");
+       }
+   });
 
-console.log(
-   "Score 50 / 26",
-   "\n- Вёрстка соответствует макету. Ширина экрана 768px (26 / 26):",
-   "\n- [ 1 ] блок header (2)",
-   "\n- [ 2 ] секция Welcome (2)",
-   "\n- [ 3 ] секция About (2)",
-   "\n- [ 4 ] секция Favorites (4)",
-   "\n- [ 5 ] секция CoffeeShop (4)",
-   "\n- [ 6 ] секция Contacts (4)",
-   "\n- [ 7 ] секция LibraryCard (4)",
-   "\n- [ 8 ] блок footer (2)",
-   "\n- Ни на одном из разрешений до 640px включительно не появляется горизонтальная полоса прокрутки (12 / 0)",
-   "\n- На ширине экрана 768рх реализовано адаптивное меню (12 / 0)",
-);
+   // Закрытие меню при клике вне поля меню
+   document.addEventListener("click", function (event) {
+       const target = event.target;
+       if (!burger.contains(target)) {
+           header.classList.remove("open");
+           header.classList.add("close");
+       }
+   });
+});

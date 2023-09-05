@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="container">
-        <header>
+        <header class="header">
             <h1>Brooklyn Public Library</h1>
               <div class="navigation">
                 <nav class="nav-menu">
@@ -26,11 +26,11 @@
                 <button class="login-btn" type="button">
                   <img class="login-icon" src="./icons/icon_profile.png" alt="Login-icon">
                 </button>
-                <div class="burger">
-                  <button class="menu-btn" type="button">
-                    <img class="burger-menu" src="./icons/burger.svg" alt="Burger-icon-menu">
-                  </button>
-                </div>
+                <button class="header__burger-btn" id="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
         </header>
         <main>
@@ -85,16 +85,18 @@
               </div>
             </fieldset>
             <fieldset class="book-box-conteiner book-winter">
-            <div class="book-box">
-              <p class="staff">Staff Picks</p>
-              <div class="written-by">
-                <p class="book-name">The Book Eaters</p>
-                <p class="author">By Sunyi Dean</p>
+              <div class="book-box-wrapper">
+                <div class="book-box">
+                  <p class="staff">Staff Picks</p>
+                  <div class="written-by">
+                    <p class="book-name">The Book Eaters</p>
+                    <p class="author">By Sunyi Dean</p>
+                  </div>
+                  <p class="about-book">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+                  <button class="buy">Buy</button>
+                  <img class="book-place" src="./images/book-winter-1.png" alt="Picture of The Book Eaters by Sunyi Dean">
+                </div>
               </div>
-              <p class="about-book">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
-              <button class="buy">Buy</button>
-              <img class="book-place" src="./images/book-winter-1.png" alt="Picture of The Book Eaters by Sunyi Dean">
-            </div>
             <div class="book-box">
               <p class="staff">Staff Picks</p>
               <div class="written-by">
