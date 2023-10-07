@@ -1,6 +1,6 @@
 # The-Brooklyn-Library
 
-[https://github.com/NataliaFomDev/The-Brooklyn-Library.git](https://nataliafomdev.github.io/)
+https://nataliafomdev.github.io/
 
 ## Часть 1. Фиксированная вёрстка
 Необходимо сверстать страницу по макету, которая корректно отображается при ширине экрана 1440рх. Если ширина экрана будет больше данного значения, то стоит сделать обертку, которая будет центрироваться на странице.
